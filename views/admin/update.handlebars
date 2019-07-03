@@ -1,0 +1,30 @@
+<!-- MAIN -->
+<div class="main">
+	<!-- MAIN CONTENT -->
+<div class="main-content">
+<div class="container-fluid">
+<form action="/admin/update/{{posts.id}}?_method=PUT" method="POST" enctype="multipart/form-data">
+<label for="title">Name</label>
+<input type="text" name="name" class="form-control" value="{{posts.name}}">
+<label for="file">file upload</label>
+<input type="file" name="file" class="form-control">
+<label for="title">Categories</label>
+<select name="categories" id="dropdown" class="form-control">
+	{{#select posts.categories}}
+		<option value="male_lathershoe"> Male_LatherShoe</option>
+		<option value="male_seudeShoe">Male_SeudeShoe</option>
+		<option value="male_sandals">Male_Sandals</option>
+		<option value="male_palm">Male_Palm</option>
+		<option value="female_heels">Female_Heels</option>
+		<option value="female_flatsole">Female_Flatsole</option>
+		<option value="female_slippers">Female_Slippers</option>
+		<option value="female_sidebag">Female_Sidebag</option>
+ 	{{/select}}	
+</select>
+<label for="title">Price</label>
+<input type="number" name="price" class="form-control"  value="{{posts.price}}">
+<button class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+</div>

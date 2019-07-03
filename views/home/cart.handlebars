@@ -1,0 +1,40 @@
+{{!-- <div class="purhase">
+<div class="purchase-img">
+    <img src="/uploads/{{cart.file}}" alt="">
+</div>
+<div class="purchase-details">
+    <div class="name">{{cart.name}}</div>
+    <div class="price">{{cart.price}}</div>
+    <div id="size-tag"></div>
+    <button><a href="/purchase/:id">purchase</a></button>
+</div>
+
+</div> --}}
+  <div class="row tips">
+          <div class="tips-container">
+             {{!-- {{#each cart}} --}}
+            <div class="tips-box">
+              <div class="tp-1">
+                <span class="datas" id="myId">{{cart.id}}</span>
+                <img src="/uploads/{{cart.file}}"class="datas" width="280px" height="200px">
+                <span class="prizes">{{cart.price}}</span>
+
+                <form action="/transit/{{cart.id}}" method="POST">
+                    <labels for="">size</labels>
+                    <input type="number" name="size">
+                    <labels for="">color</labels>
+                    <input type="text" name="color">
+                     <labels for="">quantity</labels>
+                    <input type="number" name="qty">
+                    <button type="submit">Send</button>
+                </form>
+                 <div id="size-tag"></div>
+                 <button><a href="/purchase/{{cart.id}}">Done</a></button>
+              </div>
+        
+            </div>
+                {{!-- {{/each}} --}}
+                
+            </div>
+            </div>
+            <div id="sumTotal"></div>

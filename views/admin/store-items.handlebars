@@ -1,0 +1,69 @@
+
+		<!-- MAIN -->
+		<div class="main">
+			<!-- MAIN CONTENT -->
+			<div class="main-content">
+				<div class="container-fluid">
+					<h3 class="page-title">Panels</h3>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- PANEL HEADLINE -->
+							<div class="panel panel-headline">
+								<div class="panel-heading">
+									<h3 class="panel-title">Custormers reqeust</h3>
+									<div class="right">
+										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+									</div>
+								</div>
+								
+								<div class="panel-body">
+									<div class="panel-body">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th>id</th>
+												<th>Name</th>
+												<th>Shoe</th>
+												<th>Categories</th>
+												<th>Price</th>
+												<th>Edit</th>
+												<th>Delete</th>
+											
+											</tr>
+										</thead>
+									
+										<tbody>
+												{{#each items}}
+											<tr>
+												<td>{{id}}</td>
+												<td>{{name}}</td>
+												<td><img height="50px" width="50px" src="/uploads/{{file}}" alt=""></td>
+												<td>{{categories}}</td>
+												<td>{{price}}</td>
+												<td><a href="/admin/update/{{id}}" class="btn btn-info"> edit</a></td>
+												<td><form action="/admin/del/{{id}}?_method=DELETE" method="post" >
+													<button class="btn btn-danger">delete</button>
+													</form>
+												</td>
+											</tr>
+											
+											{{/each}}
+										</tbody>
+										
+									</table>
+								</div>
+							</div>
+							<!-- END PANEL HEADLINE -->
+						</div>
+				
+		</div>
+		<!-- END MAIN -->
+		<div class="clearfix"></div>
+		<footer>
+			<div class="container-fluid">
+				<p class="copyright">&copy; 2017 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p>
+			</div>
+		</footer>
+	</div>
+	<!-- END WRAPPER -->

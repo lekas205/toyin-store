@@ -1,0 +1,24 @@
+<div class="row tips">
+<div class="tips-container">
+{{#each item}}
+    {{!-- {{#each this}} --}}
+        <div class="tips-box" id="elementId">
+            <div class="tp-1">
+            <span class="datas" id="myId">{{id}}</span>
+            <span>{{price}}</span>
+            <img src="/uploads/{{this.file}}" alt="dentist" class="datas" width="280px" height="200px">
+            <button><a href="/cart/{{this.id}}">purchase</a></button>
+            <button onclick="remove()">remove</button>
+            </div>
+            <div class="tp-2">
+            <h6><strong>Latest Blog new Slider Image Post</strong></h6>
+            <span class="date">March 10, 2010 by Lorem in Science</span> <br>
+            <span class="word">Lorem ipsum dolor sit amet consectetur, 
+                dignissimos dolor est, pariatur, nam harum 
+            </span>
+            </div>
+        </div>
+    {{!-- {{/each}} --}}
+{{/each}}  
+</div>
+</div>

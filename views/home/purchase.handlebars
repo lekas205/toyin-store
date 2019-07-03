@@ -1,0 +1,44 @@
+
+            {{#if cart}}
+            <table>
+            
+               <tr>
+                <th>name</th>
+                <th>image</th>
+                <th>price</th>
+                <th>quantity</th>
+                <th> size </th>
+                <th>color</th>
+              </tr>
+            {{#each cart}}
+
+                <tr>
+                  <th>{{name}} </th>
+                  <th> <img height="50px" width="50px" src="{{image}}" alt=""> </th>
+                  <th>{{price}}</th>
+                  <th>{{qty}}</th>
+                  <th> {{size}}</th>
+                    <th> 
+                      <a href="/cart/update/{{parentName}}?action=add" >+</a>
+                      <a href="/cart/update/{{parentName}}?action=remove" >-</a>
+                      <a href="/cart/update/{{parentName}}?action=clear" >clear</a>
+                    </th>
+                  <th>{{color}}</th>
+               </tr>
+        
+            {{/each}}
+                    <tr><th> <strong>$ {{Total}}</strong></th></tr>
+                 
+               </table>
+               <button><a href="/buyer-details" > purchase</a></button> 
+            {{else}}
+            
+            
+            </div>
+            
+            </div>
+            <div class="no-item">
+                <h2>No item yet</h2>
+            </div>
+               {{/if}} 
+               

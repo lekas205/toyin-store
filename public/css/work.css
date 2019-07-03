@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(77, 69, 69);
+    font-family: Arial, Helvetica, sans-serif
+}
+.nav{
+    background: grey;
+    padding: 20px ;
+}
+.post{
+    text-align: center;
+    color: blue;
+}
+.logo{
+    width: 40px;
+    float: left;
+    margin-right: 10%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold
+}
+.menu a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: #fff;
+    /* font-size: 14px */
+}
+.menu button{
+    background: rgb(85, 186, 204);;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    margin-top: -10px;
+    margin-right: 5%;
+    float: right;
+    cursor: pointer;
+    /* all: unset; */
+}
+.left, .right{
+    width: 50%
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    margin-top: 5%;
+    /* padding-left: 10px */
+}
+.inner{
+    width: 58%;
+    color: #fff;
+    padding-left: 30%;
+    padding-top: 8%;
+    /* background: #f00404e7 */
+}
+.inner2{
+    width: 50%;
+    color: #fff;
+    padding-left: 8%;
+    padding-top: 15px;
+    /* padding-bottom: 15px; */
+    margin-bottom: 18px;
+    background: #7e7979
+}
+.img{
+    width:40px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+    /* margin-bottom: 10px; */
+}
+.img img{
+    width: 100%;
+    border-radius: 50%
+}
+.inner p{
+    line-height: 1.5;
+    font-size: 18px;
+    /* color: #??; */
+}
+.name{
+    padding-bottom: 10px;
+    margin-top: 10px;
+    /* margin-right: 20%; */
+}
+.sign{
+    background: rgb(85, 186, 204);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    margin-right: 5%;
+    cursor: pointer;
+}
+.name button{
+    background: rgb(74, 74, 83);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    margin-left: 20%;
+    cursor: pointer;
+    /* margin-bottom: 2px */
+    /* padding: 5px 20px; */
+    /* padding-bottom: 10px; */
+    /* float: right; */
+    /* all: unset; */
+}
+.feed{
+    background: red;
+    width: #fff;
+    color: #fff;
+    width: 70px;
+    padding:10px;
+    font-size: 11px;
+    float: right;
+    margin-right: -27px;
+    /* position: absolute; */
+    transform: rotate(90deg)
+}

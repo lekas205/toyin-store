@@ -9,7 +9,7 @@
     "connect-mongo": "^2.0.3",
     "cookie-parser": "^1.4.4",
     "express": "^4.16.4",
-    "express-fileupload": "^1.1.4",
+    "express-fileupload": "^1.1.9",
     "express-handlebars": "^3.0.2",
     "express-session": "^1.16.1",
     "express-validator": "^5.3.1",
